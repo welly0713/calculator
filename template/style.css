@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    border: 0;
+    background-color: darkolivegreen;
+}
+
+div{
+    background-color: darkolivegreen;
+    border-radius: 15px;
+    width: 100vw;
+    height: 100vh;
+}
+.box {
+    max-height: calc(100vh - 30px);
+    border-radius: 15px;
+    padding-top: 30px;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+#text-area{
+    color: white;
+    letter-spacing: 2px;
+    user-select: none;
+    width: 90%;
+    height: fit-content;
+    columns: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 5px; */
+    font-size: 45px;
+    text-align:right;
+    resize: none;
+    border-radius: 15px;
+}
+
+.num_pad{
+
+    margin-top: 0px;
+    height: calc(100vh - 60px - 60px);
+    width: 90%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.num_button{
+    color: white;
+    user-select: none;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    background-color: darkolivegreen;
+    /* margin: 10px; */
+    height: 50px;
+    width: auto;
+}
+.ope_button{
+    color: white;
+    user-select: none;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    background-color: olive ;
+    /* margin: 10px; */
+    height: 50px;
+    width: auto;
+}
+
+
+@keyframes hover_in_numpad{
+    to{
+        background-color: darkseagreen;
+        color: white;
+    }
+}
+@keyframes hover_out_numpad{
+    from{
+        background-color: darkseagreen;
+        color: white;
+    }
+    to{
+    
+    }
+}
+
+.num_button:hover, .ope_button:hover, .pad_button:hover, .fun_button:hover{
+    user-select: none;
+    animation: hover_in_numpad 0.1s;
+    animation-fill-mode: forwards;
+    border: 0;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    /* margin: 10px; */
+    height: 50px;
+    width: auto;
+}
+.num_button:not(:hover), .ope_button:not(:hover), .pad_button:not(:hover), .fun_button:not(:hover){
+    user-select: none;
+    animation: hover_out_numpad 0.1s;
+    /*animation-fill-mode: forwards;*/
+    border: 0;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    /* margin: 10px; */
+    height: 50px;
+    width: auto;
+}
+
+.pad_button{
+    border-top: 2px white solid ;
+    color: white;
+    grid-column: span 2;
+    font-size: 100%;
+    background-color: darkolivegreen;
+}
+.fun_button{
+    color: white;
+    grid-column: span 2;
+    font-size: 100%;
+    background-color: darkolivegreen;
+}

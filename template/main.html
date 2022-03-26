@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body style="padding: 0%;">
+    <center >
+        <div class="box" style="margin-top: 0px;">
+            <center><p draggable="false" id="text-area" style="background-color: darkolivegreen;">0</p></center>
+            <div class = "num_pad">
+                <button onclick="AC()              " id="AC" class="ope_button">AC</button>
+                <button onclick="C()               " id="C"  class="ope_button">C </button>
+                <button onclick="backspace()       " id="bs" class="ope_button">← </button>
+                <button onclick="square()          " id="sq" class="ope_button">X²</button>
+
+                <button onclick="click_number(7)   " id="7"  class="num_button">7 </button>
+                <button onclick="click_number(8)   " id="8"  class="num_button">8 </button>
+                <button onclick="click_number(9)   " id="9"  class="num_button">9 </button>
+                <button onclick="divmod('/')       " id="/"  class="ope_button">÷ </button>
+                
+                
+                <button onclick="click_number(4)   " id="4"  class="num_button">4 </button>
+                <button onclick="click_number(5)   " id="5"  class="num_button">5 </button>
+                <button onclick="click_number(6)   " id="6"  class="num_button">6 </button>
+                <button onclick="times('*')        " id="x"  class="ope_button">× </button>
+                
+                <button onclick="click_number(1)   " id="1"  class="num_button">1 </button>
+                <button onclick="click_number(2)   " id="2"  class="num_button">2 </button>
+                <button onclick="click_number(3)   " id="3"  class="num_button">3 </button>
+
+                <button onclick="minus('-')        " id="-"  class="ope_button">- </button>
+                
+                
+                <button onclick="click_number(0)   " id="0"  class="num_button">0 </button>
+                <button onclick="decimal()         " id="de" class="num_button">.</button>
+                <button onclick="answer()          " id="en" class="ope_button" >= </button>
+                <button onclick="add('+')          " id="+"  class="ope_button">+ </button>
+                
+                <!-- <div    onclick="padmode()         " style="width: auto; height: auto; grid-column: span 2; margin-left: 25%; margin-right: 25%;border-radius: 0 ;border-top: 2px white solid;"><br><button id="pad" class="pad_button" style="width: 50%; background-color: brown;">數字鍵</button></div>
+                <div    onclick="funmode()         " style="width: auto; height: auto; grid-column: span 2;"><br><button id="fun" class="fun_button" style="width: 50%;">功能鍵</button></div> -->
+            </div>
+        </div>
+
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
